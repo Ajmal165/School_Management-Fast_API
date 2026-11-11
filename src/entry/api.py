@@ -7,7 +7,7 @@ from src.competition.permission import student_admin
 from src.user.model import User
 from typing import Tuple
 
-Router = APIRouter(prefix="/entry", tags=["Competition entry"])
+Router = APIRouter(prefix="/entry", tags=["Competition Entry"])
 
 
 @Router.post("/")
