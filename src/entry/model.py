@@ -16,7 +16,6 @@ class Entry(Base):
     user_id = Column(Integer,ForeignKey("user.id"))
     # Foreign key to Competition
     competition_id = Column(Integer,ForeignKey("competition.id"))
-
     # Entry belongs to one User
     creator = relationship("User",back_populates="entries")
     # Entry belongs to one Competition
